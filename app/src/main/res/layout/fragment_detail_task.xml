@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/task_photo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@color/black"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside" />
+
+                    <ImageButton
+                        android:id="@+id/task_camera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_camera" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/task_title_label"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+                    <EditText
+                        android:id="@+id/task_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/task_title_hint"
+                        android:importantForAutofill="no"
+                        android:inputType="textMultiLine" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_details_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/category"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="16sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/category_spinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/task_categories"
+                        android:spinnerMode="dialog"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_due"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="16sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/task_date_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="viewStart"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="DATE" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="@string/description"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/task_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/task_description"
+                    android:inputType="textMultiLine"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/task_completed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_complete_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/task_important"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_important_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/task_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_progress_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/task_date_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_date_button" />
+
+            <Button
+                android:id="@+id/task_time_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_time_button" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

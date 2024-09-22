@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Task Tracker</string>
+    <string name="task_title_hint">Enter a title for the task.</string>
+    <string name="task_title_label">Title</string>
+    <string name="task_details_label">Details</string>
+    <string name="task_complete_label">Completed</string>
+    <string name="task_important_label">Important</string>
+    <string name="task_list_title">Task Title</string>
+    <string name="task_list_date">Task Date</string>
+    <string name="task_due">Due By: </string>
+    <string name="task_date_button">Select Date</string>
+    <string name="task_time_button">Select Time</string>
+    <string name="new_task">New Task</string>
+    <string name="no_tasks">No tasks yet, create one now</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="notification_deadline_channel_name">Task Deadlines</string>
+    <string name="notification_past_due_channel_name">TASKS PAST DUE</string>
+    <string name="notification_not_started_channel_name">Task Not Started</string>
+    <string name="task_important_incomplete">You have an important task to do!</string>
+    <string name="task_deadline_close_text">You have deadlines coming soon!</string>
+    <string name="photo_view_description">A photo</string>
+    <string name="category">Category:</string>
+    <string name="description">Description:</string>
+    <string name="task_description">Enter a description for your task</string>
+    <string name="task_progress_label">In Progress</string>
+    <string name="important_task_title">Important Task Title</string>
+    <string name="important_task_date">Important Task Date</string>
+    <string name="filter_tasks">Filter Tasks</string>
+    <string name="health">Health</string>
+    <string name="shopping">Shopping</string>
+    <string name="personal">Personal</string>
+    <string name="work">Work</string>
+    <string name="general">General</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/general"
+        android:title="@string/general"
+        android:icon="@drawable/ic_general"/>
+    <item
+        android:id="@+id/work"
+        android:title="@string/work"
+        android:icon="@drawable/ic_work"/>
+    <item
+        android:id="@+id/personal"
+        android:title="@string/personal"
+        android:icon="@drawable/ic_personal"/>
+    <item
+        android:id="@+id/shopping"
+        android:title="@string/shopping"
+        android:icon="@drawable/ic_shopping"/>
+    <item
+        android:id="@+id/health"
+        android:title="@string/health"
+        android:icon="@drawable/ic_health"/>
+</menu>

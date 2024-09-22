@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <CheckBox
+        android:id="@+id/showImportant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Important" />
+
+    <CheckBox
+        android:id="@+id/showCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completed" />
+
+    <CheckBox
+        android:id="@+id/showInProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="In Progress" />
+
+</LinearLayout>
